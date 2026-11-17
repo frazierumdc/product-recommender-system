@@ -1,0 +1,27 @@
+# Data: never commit datasets (see data/README.md)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/
+
+# Run outputs (reference metrics are committed; fresh runs are not)
+results/metrics.json
+results/demo_metrics.json
+results/figures/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+.env

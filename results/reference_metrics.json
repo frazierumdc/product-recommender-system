@@ -1,0 +1,23 @@
+{
+  "_source": "Original run (Google Colab, 2026), copied from the executed notebook outputs. RMSE was printed to 4 decimals; precision, recall and F1 to 3. fallback_share was not measured in the original run. Tuning folds were unseeded in the original run, so tuned results may move slightly.",
+  "raw_ratings": 7824482,
+  "ratings": 65290,
+  "users": 1540,
+  "products": 5689,
+  "mean_rating": 4.29,
+  "median_rating": 5.0,
+  "best_params": {
+    "user_user_knn_tuned": {"k": 50, "min_k": 6, "sim_options": {"name": "cosine", "user_based": true}},
+    "item_item_knn_tuned": {"k": 30, "min_k": 6, "sim_options": {"name": "msd", "user_based": false}},
+    "svd_tuned": {"n_epochs": 20, "lr_all": 0.01, "reg_all": 0.2}
+  },
+  "scores": {
+    "user_user_knn_baseline": {"rmse": 1.0012, "precision_at_k": 0.855, "recall_at_k": 0.858, "f1_at_k": 0.856},
+    "user_user_knn_tuned": {"rmse": 0.9526, "precision_at_k": 0.847, "recall_at_k": 0.894, "f1_at_k": 0.87},
+    "item_item_knn_baseline": {"rmse": 0.995, "precision_at_k": 0.838, "recall_at_k": 0.845, "f1_at_k": 0.841},
+    "item_item_knn_tuned": {"rmse": 0.9576, "precision_at_k": 0.839, "recall_at_k": 0.88, "f1_at_k": 0.859},
+    "svd_baseline": {"rmse": 0.8882, "precision_at_k": 0.853, "recall_at_k": 0.88, "f1_at_k": 0.866},
+    "svd_tuned": {"rmse": 0.8808, "precision_at_k": 0.854, "recall_at_k": 0.878, "f1_at_k": 0.866}
+  },
+  "top_popular_min50": ["B001TH7GUU", "B003ES5ZUU", "B0019EHU8G", "B006W8U2MU", "B000QUUFRW"]
+}
